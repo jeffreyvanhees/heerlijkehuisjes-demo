@@ -15,6 +15,12 @@ er dus voor dat je de queue worker hebt gestart.
 Zie https://spatie.be/docs/laravel-medialibrary/v11/introduction voor de originele documentatie.
 
 ## Installatie
+Installeer NPM-dependencies:
+```
+npm install
+```
+
+
 Installeer via composer:
 ```
 composer require "spatie/laravel-medialibrary:^11.0.0"
@@ -33,6 +39,19 @@ php artisan vendor:publish --provider="Spatie\MediaLibrary\MediaLibraryServicePr
 Voer de migrations uit:
 ```
 php artisan migrate
+```
+
+Start de Vite-server:
+```
+npm run dev
+```
+
+### Voor demo
+Om de demo te kunnen gebruiken, moet kun je de seeders gebruiken. Stel een database 
+in en voer de volgende commando's uit:
+
+```
+php artisan migrate:fresh --seed
 ```
 
 ### Filesystem
