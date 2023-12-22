@@ -2,9 +2,10 @@
 Om het associëren van afbeeldingen (en andere media) met verschillende models
 gemakkelijk te maken, gebruiken we de package [spatie/laravel-medialibrary](https://github.com/spatie/laravel-medialibrary/tree/main).
 
-
 Deze package zorgt ervoor dat je gemakkelijk afbeeldingen kunt uploaden en deze kan
-toevoegen aan een model.
+toevoegen aan een model. Conversies worden uitgevoerd in queued jobs zodat de gebruiker
+niet hoeft te wachten tot de afbeelding is geconverteerd naar het juiste formaat. Zorg
+er dus voor dat je de queue worker hebt gestart.
 
 ### Requirements
 - laravel/framework ^10.0   
